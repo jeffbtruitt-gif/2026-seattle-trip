@@ -125,12 +125,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div style="font-size:52px;margin-bottom:12px;">🎣</div>
     <div style="font-size:24px;font-weight:700;color:#E6F1FB;margin-bottom:4px;text-shadow:0 2px 12px rgba(0,0,0,0.5);">Seattle Fishing Trip</div>
     <div style="font-size:13px;color:#85B7EB;margin-bottom:32px;letter-spacing:0.05em;">July 23–27 · The Boys</div>
-    <input id="pw-input" type="password" placeholder="Enter password"
-      style="width:260px;padding:14px 16px;border-radius:12px;border:1.5px solid rgba(55,138,221,0.6);background:rgba(4,44,83,0.75);color:#E6F1FB;font-size:16px;text-align:center;outline:none;font-family:inherit;margin-bottom:10px;"
-      onkeydown="if(event.key==='Enter')checkPw()" oninput="document.getElementById('pw-error').style.display='none'">
-    <button onclick="checkPw()" style="width:260px;padding:14px;border-radius:12px;border:none;background:#378ADD;color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;">
-      Let's Go 🎣
-    </button>
+    <form id="login-form" onsubmit="event.preventDefault();checkPw();" autocomplete="on" style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+      <input type="text" name="username" autocomplete="username" value="fishing-trip" style="display:none;">
+      <input id="pw-input" name="password" type="password" placeholder="Enter password" autocomplete="current-password"
+        style="width:260px;padding:14px 16px;border-radius:12px;border:1.5px solid rgba(55,138,221,0.6);background:rgba(4,44,83,0.75);color:#E6F1FB;font-size:16px;text-align:center;outline:none;font-family:inherit;"
+        oninput="document.getElementById('pw-error').style.display='none'">
+      <button type="submit" style="width:260px;padding:14px;border-radius:12px;border:none;background:#378ADD;color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;">
+        Let's Go 🎣
+      </button>
+    </form>
     <div id="pw-error" style="display:none;margin-top:12px;font-size:13px;color:#F0997B;">Wrong password — try again</div>
   </div>
 </div>
