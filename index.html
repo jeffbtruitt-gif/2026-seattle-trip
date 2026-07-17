@@ -201,7 +201,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
               </div>
               <div style="display:flex;align-items:center;gap:7px;">
                 <div style="width:26px;height:26px;border-radius:50%;background:#FEF3C7;color:#92400E;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;">ST</div>
-                <div style="font-size:12px;color:#94a3b8;"><span style="font-weight:600;">Stude</span> · flight TBD</div>
+                <div style="font-size:12px;color:#1e293b;"><span style="font-weight:600;">Stude</span> · DFW → SEA · <span style="color:#185FA5;font-weight:600;">lands 1:03p</span></div>
               </div>
             </div>
             <div class="schedule-desc" style="margin-top:7px;">Pick up rental car, drive to Trevor's office to drop bags — can't check into Airbnb until 4pm</div>
@@ -377,11 +377,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
                 <div style="font-size:12px;color:#1e293b;"><span style="font-weight:600;">Drew</span> · SEA → HLN · <span style="color:#185FA5;font-weight:600;">departs 10:35a</span></div>
               </div>
               <div style="display:flex;align-items:center;gap:7px;">
-                <div style="display:flex;gap:3px;">
-                  <div style="width:26px;height:26px;border-radius:50%;background:#F4C0D1;color:#72243E;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;">MX</div>
-                  <div style="width:26px;height:26px;border-radius:50%;background:#FEF3C7;color:#92400E;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;">ST</div>
-                </div>
-                <div style="font-size:12px;color:#94a3b8;"><span style="font-weight:600;">Max · Stude</span> · return flights TBD</div>
+                <div style="width:26px;height:26px;border-radius:50%;background:#F4C0D1;color:#72243E;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;">MX</div>
+                <div style="font-size:12px;color:#94a3b8;"><span style="font-weight:600;">Max</span> · return flight TBD</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:7px;">
+                <div style="width:26px;height:26px;border-radius:50%;background:#FEF3C7;color:#92400E;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;">ST</div>
+                <div style="font-size:12px;color:#1e293b;"><span style="font-weight:600;">Stude</span> · SEA → DFW · <span style="color:#185FA5;font-weight:600;">departs 11:40a</span></div>
               </div>
             </div>
             <div class="schedule-desc" style="margin-top:7px;">Trevor drops at airport or arrange rides</div>
@@ -526,26 +527,49 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 
       <!-- Stude arrival -->
       <div class="card">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <div class="person-avatar" style="background:#FEF3C7;color:#92400E;">ST</div>
-          <div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <div class="person-avatar" style="background:#FEF3C7;color:#92400E;width:32px;height:32px;font-size:11px;">ST</div>
+          <div style="margin-left:2px;">
             <div class="person-name">Stude</div>
-            <div class="person-sub">Arrival flight TBD</div>
+            <div class="person-sub">DFW → SEA · lands 1:03p</div>
           </div>
-          <span class="badge badge-amber" style="margin-left:auto;margin-bottom:0;">TBD</span>
         </div>
-        <div class="row"><svg class="ico" style="width:15px;height:15px;color:#94a3b8;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15.5l3.5-3.5L4 4l2.5-.5 6 5L18 7a2 2 0 1 1 0 4l-5.5 1.5 1 6.5L11 19l-3-5-3.5.5z"/></svg><span class="row-label">Inbound</span><span class="row-value" style="color:#94a3b8;">Not added yet</span></div>
-        <div class="row"><svg class="ico" style="width:15px;height:15px;color:#94a3b8;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15.5l3.5-3.5L4 4l2.5-.5 6 5L18 7a2 2 0 1 1 0 4l-5.5 1.5 1 6.5L11 19l-3-5-3.5.5z"/></svg><span class="row-label">Return</span><span class="row-value" style="color:#94a3b8;">Not added yet</span></div>
+        <div class="flight-row">
+          <div style="text-align:left;"><div class="flight-time">10:45a</div><div class="flight-airport">DFW</div></div>
+          <div class="flight-mid">
+            <div class="flight-dur">4h 18m · Nonstop</div>
+            <div class="flight-line-wrap"><div class="flight-line"></div><svg class="ico" style="width:14px;height:14px;color:#94a3b8;margin:0 6px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15.5l3.5-3.5L4 4l2.5-.5 6 5L18 7a2 2 0 1 1 0 4l-5.5 1.5 1 6.5L11 19l-3-5-3.5.5z"/></svg><div class="flight-line"></div></div>
+          </div>
+          <div style="text-align:right;"><div class="flight-time">1:03p</div><div class="flight-airport">SEA</div></div>
+        </div>
+      </div>
+
+      <!-- Stude return -->
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <div class="person-avatar" style="background:#FEF3C7;color:#92400E;width:32px;height:32px;font-size:11px;">ST</div>
+          <div style="margin-left:2px;">
+            <div class="person-name">Stude</div>
+            <div class="person-sub">SEA → DFW</div>
+          </div>
+        </div>
+        <div class="flight-row">
+          <div style="text-align:left;"><div class="flight-time">11:40a</div><div class="flight-airport">SEA</div></div>
+          <div class="flight-mid">
+            <div class="flight-dur">4h 10m · Nonstop</div>
+            <div class="flight-line-wrap"><div class="flight-line"></div><svg class="ico" style="width:14px;height:14px;color:#94a3b8;margin:0 6px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15.5l3.5-3.5L4 4l2.5-.5 6 5L18 7a2 2 0 1 1 0 4l-5.5 1.5 1 6.5L11 19l-3-5-3.5.5z"/></svg><div class="flight-line"></div></div>
+          </div>
+          <div style="text-align:right;"><div class="flight-time">5:50p</div><div class="flight-airport">DFW</div></div>
+        </div>
       </div>
 
       <!-- TBD returns -->
       <div class="card">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
           <div class="person-avatar" style="background:#F4C0D1;color:#72243E;width:32px;height:32px;font-size:11px;">MX</div>
-          <div class="person-avatar" style="background:#FEF3C7;color:#92400E;width:32px;height:32px;font-size:11px;">ST</div>
           <div style="margin-left:2px;">
-            <div class="person-name">Max · Stude</div>
-            <div class="person-sub">Return flights TBD</div>
+            <div class="person-name">Max</div>
+            <div class="person-sub">Return flight TBD</div>
           </div>
           <span class="badge badge-amber" style="margin-left:auto;margin-bottom:0;">TBD</span>
         </div>
