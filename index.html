@@ -165,6 +165,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <button class="nav-btn" onclick="showPage('locations',this)">
       <svg class="ico" style="font-size:21px;width:21px;height:21px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6z"/><circle cx="12" cy="8" r="2"/></svg>Locations
     </button>
+    <button class="nav-btn" onclick="showPage('restaurants',this)">
+      <svg class="ico" style="font-size:21px;width:21px;height:21px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v6a2 2 0 1 1-4 0V2M5 8v14M11 2v20M19 2c-2.5 0-4 2-4 5s1.5 5 4 5v10"/></svg>Food
+    </button>
     <button class="nav-btn" onclick="showPage('venmo',this)">
       <svg class="ico" style="font-size:21px;width:21px;height:21px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h2M12 15h5"/></svg>Pay
     </button>
@@ -240,7 +243,23 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
           <div class="schedule-time">Evening</div>
           <div>
             <div class="schedule-title">Hang out in Seattle</div>
-            <div class="schedule-desc">Grab dinner, take it easy — big day tomorrow</div>
+            <div class="schedule-desc">Grab dinner, take it easy before the movie</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">8:00 PM</div>
+          <div>
+            <div class="schedule-title">🎬 Central Cinema — Night of the Creeps</div>
+            <div class="schedule-desc">1411 21st Ave, Seattle, WA 98122</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time"></div>
+          <div style="flex:1;">
+            <div class="charter-link-bar" onclick="openMaps('1411 21st Ave, Seattle, WA 98122')">
+              <span style="font-size:13px;font-weight:500;color:#1e293b;">🎬 Central Cinema</span>
+              <span class="schedule-link"><svg class="ico" style="width:13px;height:13px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg></span>
+            </div>
           </div>
         </div>
         <div class="schedule-item">
@@ -280,6 +299,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
           </div>
         </div>
         <div class="schedule-item">
+          <div class="schedule-time">Late Afternoon</div>
+          <div>
+            <div class="schedule-title">Paddle boarding</div>
+            <div class="schedule-desc">SUP session before heading out for the night</div>
+          </div>
+        </div>
+        <div class="schedule-item">
           <div class="schedule-time">Evening</div>
           <div>
             <div class="schedule-title">Night out in Seattle</div>
@@ -316,10 +342,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
           </div>
         </div>
         <div class="schedule-item">
-          <div class="schedule-time">Midday</div>
+          <div class="schedule-time">Morning</div>
           <div>
             <div class="schedule-title">Big hike</div>
-            <div class="schedule-desc">Drop stuff at Trevor's, hit the trail</div>
+            <div class="schedule-desc">hit the trail</div>
           </div>
         </div>
         <div class="schedule-item">
@@ -543,6 +569,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       </div>
 
       <div class="card" style="cursor:default;">
+        <div class="loc-thumb-emoji" style="background:#EDE9FE;">🎬</div>
+        <span class="badge badge-blue">Thursday 8:00 PM</span>
+        <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Central Cinema — Night of the Creeps</div>
+        <div style="font-size:13px;color:#94a3b8;">1411 21st Ave · Seattle, WA 98122</div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button onclick="openMaps('1411 21st Ave, Seattle, WA 98122')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
+          <button onclick="openLink('https://central-cinema.com/movie/night-of-the-creeps/')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Website</button>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
         <div class="loc-thumb-emoji" style="background:#E1F5EE;">⛵</div>
         <span class="badge badge-teal">Friday AM · confirmed</span>
         <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Cut Plug Charters</div>
@@ -585,6 +622,45 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <div style="display:flex;gap:8px;margin-top:10px;">
           <button onclick="event.stopPropagation();openMaps('Mt Si Trail, North Bend, WA')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
           <button onclick="openDetail('hike')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="8.01" stroke-width="2"/><line x1="12" y1="11" x2="12" y2="16"/></svg>Details</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RESTAURANTS -->
+    <div class="page" id="page-restaurants">
+      <p class="section-label">Places to eat &amp; drink</p>
+
+      <div class="card" style="cursor:default;">
+        <div class="loc-thumb-emoji" style="background:#FFE8E0;">🍣</div>
+        <span class="badge badge-blue">Sushi</span>
+        <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Sugo Hand Roll Bar</div>
+        <div style="font-size:13px;color:#94a3b8;">2001 Western Ave, Seattle, WA 98121</div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button onclick="openLink('https://www.google.com/maps/place/Sugo+Hand+Roll+Bar/@47.6106632,-122.3443931,1766m/data=!3m2!1e3!4b1!4m6!3m5!1s0x54901570a6adb7bb:0xc65e9402b00b1757!8m2!3d47.6106632!4d-122.3443931!16s%2Fg%2F11spf9dwt8!18m1!1e1?entry=ttu&amp;g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
+          <button onclick="openLink('https://www.sugohandroll.com/')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Website</button>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
+        <div class="loc-thumb-emoji" style="background:#FDF0D5;">🍺</div>
+        <span class="badge badge-amber">Brewery</span>
+        <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Gasworks Brewing</div>
+        <div style="font-size:13px;color:#94a3b8;">2441 N Northlake Way, Seattle, WA 98103</div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button onclick="openLink('https://www.google.com/maps/place/Gasworks+Brewing/@47.6515947,-122.3293251,882m/data=!3m2!1e3!4b1!4m6!3m5!1s0x549015e8a93f3a83:0x360f42655cdba084!8m2!3d47.6515947!4d-122.3293251!16s%2Fg%2F11y64f64b6!18m1!1e1?entry=ttu&amp;g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
+          <button onclick="openLink('https://www.gasworksbrewing.com/')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Website</button>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
+        <div class="loc-thumb-emoji" style="background:#f1f5f9;">🥟</div>
+        <span class="badge badge-gray">Dumplings</span>
+        <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Din Tai Fung — Pacific Place</div>
+        <div style="font-size:13px;color:#94a3b8;">600 Pine St #403, Seattle, WA 98101</div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button onclick="openLink('https://www.google.com/maps/place/Din+Tai+Fung+Pacific+Place/@47.6125177,-122.3375979,17z/data=!4m12!1m6!3m5!1s0x54906ab4d193e93d:0x43071dc8ccc02412!2sDin+Tai+Fung+Pacific+Place!8m2!3d47.6125141!4d-122.3354092!3m4!1s0x54906ab4d193e93d:0x43071dc8ccc02412!8m2!3d47.6125141!4d-122.3354092')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
+          <button onclick="openLink('https://dtf.com/en-us/locations/seattle-pacific-place')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Website</button>
         </div>
       </div>
 
@@ -907,6 +983,9 @@ function openVenmo(handle, amount, note) {
 }
 function openMaps(addr){
   window.open('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(addr),'_blank');
+}
+function openLink(url){
+  window.open(url,'_blank');
 }
 </script>
 </body>
