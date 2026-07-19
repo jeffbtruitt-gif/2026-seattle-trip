@@ -197,7 +197,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
               </div>
               <div style="display:flex;align-items:center;gap:7px;">
                 <div style="width:26px;height:26px;border-radius:50%;background:#FEF3C7;color:#92400E;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;">ST</div>
-                <div style="font-size:12px;color:#1e293b;"><span style="font-weight:600;">Stude</span> · DFW → SEA · <span style="color:#185FA5;font-weight:600;">lands 1:03p</span></div>
+                <div style="font-size:12px;color:#94a3b8;"><span style="font-weight:600;">Stude</span> · (Stude already in WA)</div>
               </div>
               <div style="display:flex;align-items:center;gap:7px;">
                 <div style="width:26px;height:26px;border-radius:50%;background:#EAF3DE;color:#27500A;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;">AC</div>
@@ -219,8 +219,58 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <div class="schedule-item">
           <div class="schedule-time">Afternoon</div>
           <div>
-            <div class="schedule-title">Explore Seattle</div>
-            <div class="schedule-desc">Pike Place, waterfront, food — kill some time in style</div>
+            <div class="schedule-title">Park cars & drop bags at the office</div>
+            <div class="schedule-desc">Leave the cars and gear at Trevor's office, grab an Uber into Pike Place Market</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time"></div>
+          <div style="flex:1;">
+            <div class="charter-link-bar" onclick="openMaps('85 Pike St, Seattle, WA 98101')">
+              <span style="font-size:13px;font-weight:500;color:#1e293b;">🐟 Pike Place Market</span>
+              <span class="schedule-link"><svg class="ico" style="width:13px;height:13px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg></span>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time"></div>
+          <div>
+            <div class="schedule-title">Optional: ferry to Bainbridge Island</div>
+            <div class="schedule-desc">If we're feeling it, walk down to Colman Dock and take the ferry over for lunch and/or drinks on the island</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time"></div>
+          <div style="flex:1;">
+            <div class="charter-link-bar" onclick="openMaps('801 Alaskan Way, Seattle, WA 98104')">
+              <span style="font-size:13px;font-weight:500;color:#1e293b;">⛴️ Colman Dock — Seattle Ferry Terminal</span>
+              <span class="schedule-link"><svg class="ico" style="width:13px;height:13px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg></span>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time"></div>
+          <div style="flex:1;">
+            <div class="charter-link-bar" onclick="openLink('https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-bi')">
+              <span style="font-size:13px;font-weight:500;color:#1e293b;">🕐 Ferry schedule — Seattle ↔ Bainbridge</span>
+              <span class="schedule-link"><svg class="ico" style="width:13px;height:13px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg></span>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time"></div>
+          <div>
+            <div class="schedule-title">🍔 Lunch/drinks at Harbour Public House</div>
+            <div class="schedule-desc">Waterfront pub right by the Bainbridge ferry dock</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time"></div>
+          <div style="flex:1;">
+            <div class="charter-link-bar" onclick="openMaps('231 Parfitt Way SW, Bainbridge Island, WA 98110')">
+              <span style="font-size:13px;font-weight:500;color:#1e293b;">🍔 Harbour Public House</span>
+              <span class="schedule-link"><svg class="ico" style="width:13px;height:13px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg></span>
+            </div>
           </div>
         </div>
         <div class="schedule-item">
@@ -263,6 +313,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
           </div>
         </div>
         <div class="schedule-item">
+          <div class="schedule-time">Late Night</div>
+          <div>
+            <div class="schedule-title">🎮 Nintendo 64 back at the Airbnb</div>
+            <div class="schedule-desc">Trevor will be thoroughly embarrassed</div>
+          </div>
+        </div>
+        <div class="schedule-item">
           <div class="schedule-time"></div>
           <div style="flex:1;">
             <div class="charter-link-bar" onclick="openDetail('airbnb')">
@@ -296,6 +353,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
           <div>
             <div class="schedule-title">Back from the water</div>
             <div class="schedule-desc">Fish cleaning, photos, celebrate the catch</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time"></div>
+          <div>
+            <div class="schedule-title">💵 Bring cash for the deckhands</div>
+            <div class="schedule-desc">Don't forget cash to tip the deckhands — those guys clean and filet your catch</div>
           </div>
         </div>
         <div class="schedule-item">
@@ -413,7 +477,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
           </div>
           <div style="text-align:right;"><div class="flight-time">7:58a</div><div class="flight-airport">SEA</div></div>
         </div>
-        <div class="row" style="margin-top:2px;"><svg class="ico" style="width:15px;height:15px;color:#94a3b8;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 5H7a2 2 0 0 0-2 2v2a2 2 0 0 1 0 4v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2a2 2 0 0 1 0-4V7a2 2 0 0 0-2-2h-4z"/><line x1="11" y1="5" x2="11" y2="19" stroke-dasharray="2 2"/></svg><span class="row-label">Flight</span><span class="row-value">Alaska · Seat assigned day of travel · Class X Coach</span></div>
       </div>
 
       <!-- Jeff & Max -->
@@ -441,20 +504,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 
       <!-- Stude arrival -->
       <div class="card">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-          <div class="person-avatar" style="background:#FEF3C7;color:#92400E;width:32px;height:32px;font-size:11px;">ST</div>
-          <div style="margin-left:2px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div class="person-avatar" style="background:#FEF3C7;color:#92400E;">ST</div>
+          <div style="flex:1;">
             <div class="person-name">Stude</div>
-            <div class="person-sub">DFW → SEA · lands 1:03p</div>
+            <div class="person-sub">Already in WA — no arrival flight needed</div>
           </div>
-        </div>
-        <div class="flight-row">
-          <div style="text-align:left;"><div class="flight-time">10:45a</div><div class="flight-airport">DFW</div></div>
-          <div class="flight-mid">
-            <div class="flight-dur">4h 18m · Nonstop</div>
-            <div class="flight-line-wrap"><div class="flight-line"></div><svg class="ico" style="width:14px;height:14px;color:#94a3b8;margin:0 6px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15.5l3.5-3.5L4 4l2.5-.5 6 5L18 7a2 2 0 1 1 0 4l-5.5 1.5 1 6.5L11 19l-3-5-3.5.5z"/></svg><div class="flight-line"></div></div>
-          </div>
-          <div style="text-align:right;"><div class="flight-time">1:03p</div><div class="flight-airport">SEA</div></div>
+          <span class="badge badge-green" style="margin-bottom:0;">Local</span>
         </div>
       </div>
 
@@ -593,6 +649,28 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       </div>
 
       <div class="card" style="cursor:default;">
+        <div class="loc-thumb-emoji" style="background:#FDE9D9;">🐟</div>
+        <span class="badge badge-blue">Thursday afternoon</span>
+        <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Pike Place Market</div>
+        <div style="font-size:13px;color:#94a3b8;">85 Pike St · Seattle, WA 98101</div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button onclick="openMaps('85 Pike St, Seattle, WA 98101')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
+          <button onclick="openLink('https://www.pikeplacemarket.org/')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Website</button>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
+        <div class="loc-thumb-emoji" style="background:#E6F1FB;">⛴️</div>
+        <span class="badge badge-gray">Optional · Bainbridge Island</span>
+        <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Colman Dock — Seattle Ferry Terminal</div>
+        <div style="font-size:13px;color:#94a3b8;">801 Alaskan Way · Seattle, WA 98104</div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button onclick="openMaps('801 Alaskan Way, Seattle, WA 98104')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
+          <button onclick="openLink('https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-bi')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="5" width="16" height="16" rx="2"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="4" y1="11" x2="20" y2="11"/></svg>Schedule</button>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
         <div class="loc-thumb-emoji" style="background:#EDE9FE;">🎬</div>
         <span class="badge badge-blue">Thursday 8:00 PM</span>
         <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Central Cinema — Night of the Creeps</div>
@@ -685,6 +763,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <div style="display:flex;gap:8px;margin-top:10px;">
           <button onclick="openLink('https://www.google.com/maps/place/Din+Tai+Fung+Pacific+Place/@47.6125177,-122.3375979,17z/data=!4m12!1m6!3m5!1s0x54906ab4d193e93d:0x43071dc8ccc02412!2sDin+Tai+Fung+Pacific+Place!8m2!3d47.6125141!4d-122.3354092!3m4!1s0x54906ab4d193e93d:0x43071dc8ccc02412!8m2!3d47.6125141!4d-122.3354092')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
           <button onclick="openLink('https://dtf.com/en-us/locations/seattle-pacific-place')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Website</button>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
+        <div class="loc-thumb-emoji" style="background:#E1F5EE;">🍔</div>
+        <span class="badge badge-teal">Bainbridge Island · pub</span>
+        <div style="font-size:15px;font-weight:600;color:#1e293b;margin-bottom:3px;">Harbour Public House</div>
+        <div style="font-size:13px;color:#94a3b8;">231 Parfitt Way SW, Bainbridge Island, WA 98110</div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button onclick="openMaps('231 Parfitt Way SW, Bainbridge Island, WA 98110')" style="flex:1;padding:8px;border-radius:9px;border:1.5px solid #185FA5;background:none;color:#185FA5;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="7" x2="15" y2="21"/></svg>Maps</button>
+          <button onclick="openLink('https://harbourpub.com/')" style="flex:2;padding:8px;border-radius:9px;border:1.5px solid #e2e8f0;background:none;color:#64748b;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px;"><svg class="ico" style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Website</button>
         </div>
       </div>
 
@@ -863,6 +952,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <div class="pending-banner">
         <svg class="ico" style="width:16px;height:16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
         <p>Bring a backpack for the hike + fishing day if you want snacks on the boat (you do). Bring something warm — it cools off at night and it could be very chilly on the boat in the morning since we're leaving early and the water is cold.</p>
+      </div>
+
+      <div class="pending-banner">
+        <svg class="ico" style="width:16px;height:16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+        <p>If you guys get sea sick or motion sickness easily, strongly consider Dramamine patches you can put on your neck. Jeff's got his sea legs, but for the land lovers (Dustin, looking at you) the last thing you want is to be blowing chunks while the rest of us catch fish. Right now it looks like a possible front with light rain could roll in toward the weekend — could cause some chop out there.</p>
       </div>
 
       <a href="https://seattlesalmonfishing.com" target="_blank" class="link-btn">
